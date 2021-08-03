@@ -1,0 +1,238 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.example.org/conditional-maintenance-task-ontology#"
+     xml:base="http://www.example.org/conditional-maintenance-task-ontology"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:part14="http://test.com/iso/15926/part14/"
+     xmlns:static-procedure-ontology="http://www.example.org/static-procedure-ontology#">
+    <owl:Ontology rdf:about="http://www.example.org/conditional-maintenance-task-ontology">
+        <owl:versionIRI rdf:resource="http://www.example.org/conditional-maintenance-task-ontology/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.com/iso/15926/part14/activityPartOf -->
+
+    <owl:AnnotationProperty rdf:about="http://test.com/iso/15926/part14/activityPartOf"/>
+    
+
+
+    <!-- http://test.com/iso/15926/part14/representedBy -->
+
+    <owl:AnnotationProperty rdf:about="http://test.com/iso/15926/part14/representedBy"/>
+    
+
+
+    <!-- http://www.example.org/static-procedure-ontology#hasDirectActivityPart -->
+
+    <owl:AnnotationProperty rdf:about="http://www.example.org/static-procedure-ontology#hasDirectActivityPart"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000219 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000219"/>
+    
+
+
+    <!-- http://test.com/iso/15926/part14/after -->
+
+    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/after"/>
+    
+
+
+    <!-- http://test.com/iso/15926/part14/occursRelativeTo -->
+
+    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/occursRelativeTo"/>
+    
+
+
+    <!-- http://test.com/iso/15926/part14/realizedIn -->
+
+    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/realizedIn"/>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#addressedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#addressedBy">
+        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/occursRelativeTo"/>
+        <owl:inverseOf rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#addresses"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#addresses -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#addresses">
+        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/occursRelativeTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#functionalFailureRealizedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#functionalFailureRealizedIn">
+        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/realizedIn"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.example.org/conditional-maintenance-task-ontology#functionalFailureRealizedIn"/>
+            <rdf:Description rdf:about="http://www.example.org/conditional-maintenance-task-ontology#triggers"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#resultsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#resultsIn">
+        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/after"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#triggers">
+        <rdfs:subPropertyOf rdf:resource="http://www.example.org/static-procedure-ontology#directlyBefore"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.example.org/static-procedure-ontology#directlyBefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#directlyBefore"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.com/iso/15926/part14/Activity -->
+
+    <owl:Class rdf:about="http://test.com/iso/15926/part14/Activity"/>
+    
+
+
+    <!-- http://test.com/iso/15926/part14/Event -->
+
+    <owl:Class rdf:about="http://test.com/iso/15926/part14/Event"/>
+    
+
+
+    <!-- http://test.com/iso/15926/part14/InformationObject -->
+
+    <owl:Class rdf:about="http://test.com/iso/15926/part14/InformationObject"/>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#CorrectiveMaintenanceTask -->
+
+    <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#CorrectiveMaintenanceTask">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.example.org/static-procedure-ontology#MaintenanceTask"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#addresses"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <skos:definition>A OMPD:maintenance task that addresses a OMPD:functional failure</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#FailureEvent -->
+
+    <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FailureEvent">
+        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Event"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#resultsIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>An ISO:Activity that results in a OMPD: functional failure</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#FailureModeObservation -->
+
+    <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FailureModeObservation">
+        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/InformationObject"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <skos:definition>An ISO:Information object that denotes a OMPD:functional failure</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure -->
+
+    <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure">
+        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Activity"/>
+        <skos:definition>An ISO:Activity that is denoted by a OMPD:Failure mode observation</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.example.org/static-procedure-ontology#MaintenanceTask -->
+
+    <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#MaintenanceTask"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
