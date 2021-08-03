@@ -15,6 +15,7 @@
      xmlns:static-procedure-ontology="http://www.example.org/static-procedure-ontology#">
     <owl:Ontology rdf:about="http://www.example.org/static-procedure-ontology">
         <owl:versionIRI rdf:resource="http://www.example.org/static-procedure-ontology/1.0.0"/>
+        <owl:imports rdf:resource="http://test.com/iso/15926/part14/1.0"/>
     </owl:Ontology>
     
 
