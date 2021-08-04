@@ -224,12 +224,6 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- http://www.example.org/static-procedure-ontology#hasContext -->
-
-    <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#hasContext"/>
-    
-
-
     <!-- http://www.example.org/static-procedure-ontology#hasDirectActivityPart -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#hasDirectActivityPart">
@@ -379,7 +373,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Component">
         <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
-        <skos:definition>A ISO:PhysicalObject that  may bear some OMPD:ResourceRole</skos:definition>
+        <skos:definition>A ISO:PhysicalObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
 
@@ -394,7 +388,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>An ISO:Disposition that  is  realized  in  some ISO:MaintenanceProcess</skos:definition>
+        <skos:definition>An ISO:Disposition that  is  realized  in  some OMPD:MaintenanceProcess</skos:definition>
     </owl:Class>
     
 
@@ -476,6 +470,13 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.example.org/static-procedure-ontology#directActivityPartOf"/>
                 <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceProcedureProcess"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.example.org/static-procedure-ontology#directActivityPartOf"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceTask"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -518,7 +519,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Material">
         <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
-        <skos:definition>A ISO:PhysicalObject that  may bear some OMPD:ResourceRole</skos:definition>
+        <skos:definition>A ISO:PhysicalObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
 
@@ -527,7 +528,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Permit">
         <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/InformationObject"/>
-        <skos:definition>A ISO:InformationObject that  may bear some OMPD:ResourceRole</skos:definition>
+        <skos:definition>A ISO:InformationObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
 
@@ -544,8 +545,18 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#QualifiedPerson -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#QualifiedPerson">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Organism"/>
-        <skos:definition>A ISO:Person that may bear some OMPD:ResourceRole and has a OMPD:Qualification</skos:definition>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://test.com/iso/15926/part14/Person"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/hasQuality"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#Qualification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <skos:definition>A ISO:Person that may have some OMPD:ResourceRole and has a OMPD:Qualification</skos:definition>
     </owl:Class>
     
 
@@ -584,7 +595,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Tool">
         <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
-        <skos:definition>A ISO:PhysicalObject that  may bear some OMPD:ResourceRole</skos:definition>
+        <skos:definition>A ISO:PhysicalObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
 
