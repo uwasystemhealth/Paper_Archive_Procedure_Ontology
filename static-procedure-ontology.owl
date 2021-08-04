@@ -11,11 +11,11 @@
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:part14="http://test.com/iso/15926/part14/"
+     xmlns:part14="http://standards.iso.org/iso/15926/part14/"
      xmlns:static-procedure-ontology="http://www.example.org/static-procedure-ontology#">
     <owl:Ontology rdf:about="http://www.example.org/static-procedure-ontology">
         <owl:versionIRI rdf:resource="http://www.example.org/static-procedure-ontology/1.0.0"/>
-        <owl:imports rdf:resource="http://test.com/iso/15926/part14/1.0"/>
+        <owl:imports rdf:resource="http://standards.iso.org/iso/15926/part14/1.0"/>
     </owl:Ontology>
     
 
@@ -145,51 +145,57 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- http://test.com/iso/15926/part14/activityPartOf -->
+    <!-- http://standards.iso.org/iso/15926/part14/activityPartOf -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/activityPartOf"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/activityPartOf"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/after -->
+    <!-- http://standards.iso.org/iso/15926/part14/after -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/after"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/after"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/before -->
+    <!-- http://standards.iso.org/iso/15926/part14/before -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/before"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/before"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/hasActivityPart -->
+    <!-- http://standards.iso.org/iso/15926/part14/hasActivityPart -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/hasActivityPart"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/hasActivityPart"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/hasRole -->
+    <!-- http://standards.iso.org/iso/15926/part14/hasQuality -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/hasRole"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/hasQuality"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/participantIn -->
+    <!-- http://standards.iso.org/iso/15926/part14/hasRole -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/participantIn"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/hasRole"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/realizedIn -->
+    <!-- http://standards.iso.org/iso/15926/part14/participantIn -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/realizedIn"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/participantIn"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/representedBy -->
+    <!-- http://standards.iso.org/iso/15926/part14/realizedIn -->
 
-    <owl:ObjectProperty rdf:about="http://test.com/iso/15926/part14/representedBy"/>
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/realizedIn"/>
+    
+
+
+    <!-- http://standards.iso.org/iso/15926/part14/representedBy -->
+
+    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/representedBy"/>
     
 
 
@@ -235,7 +241,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#hasIndirectActivityPart -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#hasIndirectActivityPart">
-        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/hasActivityPart"/>
+        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/hasActivityPart"/>
         <owl:inverseOf rdf:resource="http://www.example.org/static-procedure-ontology#indirectActivityPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
@@ -245,7 +251,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#indirectActivityPartOf -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#indirectActivityPartOf">
-        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/activityPartOf"/>
+        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/activityPartOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
@@ -254,7 +260,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#indirectlyAfter -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#indirectlyAfter">
-        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/after"/>
+        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/after"/>
         <owl:inverseOf rdf:resource="http://www.example.org/static-procedure-ontology#indirectlyBefore"/>
     </owl:ObjectProperty>
     
@@ -263,7 +269,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#indirectlyBefore -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#indirectlyBefore">
-        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/before"/>
+        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/before"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
@@ -282,7 +288,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#resourceIn -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/static-procedure-ontology#resourceIn">
-        <rdfs:subPropertyOf rdf:resource="http://test.com/iso/15926/part14/participantIn"/>
+        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/participantIn"/>
     </owl:ObjectProperty>
     
 
@@ -321,58 +327,64 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     
 
 
-    <!-- http://test.com/iso/15926/part14/Activity -->
+    <!-- http://standards.iso.org/iso/15926/part14/Activity -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/Activity"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Activity"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/Disposition -->
+    <!-- http://standards.iso.org/iso/15926/part14/Disposition -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/Disposition"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Disposition"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/InformationObject -->
+    <!-- http://standards.iso.org/iso/15926/part14/InformationObject -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/InformationObject"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/InformationObject"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/Object -->
+    <!-- http://standards.iso.org/iso/15926/part14/Object -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/Object"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Object"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/Organism -->
+    <!-- http://standards.iso.org/iso/15926/part14/Organism -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/Organism"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Organism"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/PhysicalObject -->
+    <!-- http://standards.iso.org/iso/15926/part14/Person -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/PhysicalObject"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Person"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/Quality -->
+    <!-- http://standards.iso.org/iso/15926/part14/PhysicalObject -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/Quality"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/PhysicalObject"/>
     
 
 
-    <!-- http://test.com/iso/15926/part14/Role -->
+    <!-- http://standards.iso.org/iso/15926/part14/Quality -->
 
-    <owl:Class rdf:about="http://test.com/iso/15926/part14/Role"/>
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Quality"/>
+    
+
+
+    <!-- http://standards.iso.org/iso/15926/part14/Role -->
+
+    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Role"/>
     
 
 
     <!-- http://www.example.org/static-procedure-ontology#Component -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Component">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/PhysicalObject"/>
         <skos:definition>A ISO:PhysicalObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
@@ -381,10 +393,10 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#Hazard -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Hazard">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Disposition"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Disposition"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/realizedIn"/>
+                <owl:onProperty rdf:resource="http://standards.iso.org/iso/15926/part14/realizedIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -398,11 +410,11 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#MaintainableItem">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/hasRole"/>
+                <owl:onProperty rdf:resource="http://standards.iso.org/iso/15926/part14/hasRole"/>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#MaintainableItemRole"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/PhysicalObject"/>
         <skos:definition>An ISO:PhysicalObjectt hat has a role OMPD:MaintainableItemRole</skos:definition>
     </owl:Class>
     
@@ -411,7 +423,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#MaintainableItemRole -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#MaintainableItemRole">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Role"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Role"/>
         <skos:definition>An ISO:Role that  is  the  role  of the item that work is performed on in a OMPD:MaintenanceProcess</skos:definition>
     </owl:Class>
     
@@ -420,7 +432,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#MaintenanceProcedureDocument -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#MaintenanceProcedureDocument">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/InformationObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/InformationObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -444,7 +456,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#MaintenanceProcess -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#MaintenanceProcess">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Activity"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Activity"/>
         <skos:definition>An ISO:Activity that requires zero or more OMPD:Resource and realizes zero or more OMPD:Hazard</skos:definition>
     </owl:Class>
     
@@ -456,7 +468,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceProcess"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/representedBy"/>
+                <owl:onProperty rdf:resource="http://standards.iso.org/iso/15926/part14/representedBy"/>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceTaskDescription"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -503,7 +515,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#MaintenanceTaskDescription -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#MaintenanceTaskDescription">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/InformationObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/InformationObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
@@ -518,7 +530,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#Material -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Material">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/PhysicalObject"/>
         <skos:definition>A ISO:PhysicalObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
@@ -527,7 +539,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#Permit -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Permit">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/InformationObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/InformationObject"/>
         <skos:definition>A ISO:InformationObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
@@ -536,7 +548,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#Qualification -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Qualification">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Quality"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Quality"/>
         <skos:definition>A ISO:Quality that  is  beared  by zero  or  more OMPD:QualitifiedPerson</skos:definition>
     </owl:Class>
     
@@ -548,9 +560,9 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://test.com/iso/15926/part14/Person"/>
+                    <rdf:Description rdf:about="http://standards.iso.org/iso/15926/part14/Person"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/hasQuality"/>
+                        <owl:onProperty rdf:resource="http://standards.iso.org/iso/15926/part14/hasQuality"/>
                         <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#Qualification"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -566,14 +578,14 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Resource">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/hasRole"/>
+                <owl:onProperty rdf:resource="http://standards.iso.org/iso/15926/part14/hasRole"/>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#ResourceRole"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Object"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://test.com/iso/15926/part14/participantIn"/>
+                <owl:onProperty rdf:resource="http://standards.iso.org/iso/15926/part14/participantIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#MaintenanceProcess"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -585,7 +597,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#ResourceRole -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#ResourceRole">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/Role"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Role"/>
         <skos:definition>An ISO:Role that  is  the  role  of all  entities  that  participate  in  a OMPD:MaintenanceProcess</skos:definition>
     </owl:Class>
     
@@ -594,7 +606,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
     <!-- http://www.example.org/static-procedure-ontology#Tool -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#Tool">
-        <rdfs:subClassOf rdf:resource="http://test.com/iso/15926/part14/PhysicalObject"/>
+        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/PhysicalObject"/>
         <skos:definition>A ISO:PhysicalObject that  may have some OMPD:ResourceRole</skos:definition>
     </owl:Class>
     
@@ -639,7 +651,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://test.com/iso/15926/part14/participantIn"/>
+                                <swrl:propertyPredicate rdf:resource="http://standards.iso.org/iso/15926/part14/participantIn"/>
                                 <swrl:argument1 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#z"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#x"/>
                             </rdf:Description>
@@ -655,7 +667,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://test.com/iso/15926/part14/participantIn"/>
+                        <swrl:propertyPredicate rdf:resource="http://standards.iso.org/iso/15926/part14/participantIn"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#z"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#y"/>
                     </rdf:Description>
@@ -686,7 +698,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
                         <rdf:first>
                             <rdf:Description>
                                 <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://test.com/iso/15926/part14/realizedIn"/>
+                                <swrl:propertyPredicate rdf:resource="http://standards.iso.org/iso/15926/part14/realizedIn"/>
                                 <swrl:argument1 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#z"/>
                                 <swrl:argument2 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#x"/>
                             </rdf:Description>
@@ -702,7 +714,7 @@ every c that is a concretization of g specifically denotes r</obo:IAO_0000116>
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="http://test.com/iso/15926/part14/realizedIn"/>
+                        <swrl:propertyPredicate rdf:resource="http://standards.iso.org/iso/15926/part14/realizedIn"/>
                         <swrl:argument1 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#z"/>
                         <swrl:argument2 rdf:resource="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14#y"/>
                     </rdf:Description>
