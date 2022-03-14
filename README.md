@@ -1,4 +1,5 @@
-# Paper_Archive_Procedure_Ontology
+# Procedure Ontology
+
 This repository contains the procedure ontology and forms part of Caitlin Woods' PhD Thesis.
 
 To use this ontology, please cite the following works:
@@ -9,3 +10,7 @@ To use this ontology, please cite the following works:
   booktitle={Submimtted for Publication},
   year={2021}
 }
+
+To open the ontology, please open conditional-maintenance-task-ontology in Protege. 
+
+Note that this ontology makes use of SWRL rules, so please ensure that the SWRL tab is open when interacting with the ontology.
