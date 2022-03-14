@@ -1,16 +1,21 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.example.org/conditional-maintenance-task-ontology#"
      xml:base="http://www.example.org/conditional-maintenance-task-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pav="http://purl.org/pav/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:rdl="http://rds.posccaesar.org/ontology/lis14/rdl/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:terms="http://purl.org/dc/terms/"
      xmlns:part14="http://standards.iso.org/iso/15926/part14/"
      xmlns:static-procedure-ontology="http://www.example.org/static-procedure-ontology#">
     <owl:Ontology rdf:about="http://www.example.org/conditional-maintenance-task-ontology">
@@ -31,15 +36,15 @@
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/activityPartOf -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/activityPartOf -->
 
-    <owl:AnnotationProperty rdf:about="http://standards.iso.org/iso/15926/part14/activityPartOf"/>
+    <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/activityPartOf"/>
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/representedBy -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/representedBy -->
 
-    <owl:AnnotationProperty rdf:about="http://standards.iso.org/iso/15926/part14/representedBy"/>
+    <owl:AnnotationProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/representedBy"/>
     
 
 
@@ -72,28 +77,28 @@
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/after -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/after -->
 
-    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/after"/>
+    <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/after"/>
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/occursRelativeTo -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo -->
 
-    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/occursRelativeTo"/>
+    <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/realizedIn -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn -->
 
-    <owl:ObjectProperty rdf:about="http://standards.iso.org/iso/15926/part14/realizedIn"/>
+    <owl:ObjectProperty rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
     
 
 
     <!-- http://www.example.org/conditional-maintenance-task-ontology#addressedBy -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#addressedBy">
-        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/occursRelativeTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
         <owl:inverseOf rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#addresses"/>
     </owl:ObjectProperty>
     
@@ -102,7 +107,7 @@
     <!-- http://www.example.org/conditional-maintenance-task-ontology#addresses -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#addresses">
-        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/occursRelativeTo"/>
+        <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/occursRelativeTo"/>
     </owl:ObjectProperty>
     
 
@@ -110,7 +115,7 @@
     <!-- http://www.example.org/conditional-maintenance-task-ontology#functionalFailureRealizedIn -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#functionalFailureRealizedIn">
-        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/realizedIn"/>
+        <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/realizedIn"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.example.org/conditional-maintenance-task-ontology#functionalFailureRealizedIn"/>
             <rdf:Description rdf:about="http://www.example.org/conditional-maintenance-task-ontology#triggers"/>
@@ -122,7 +127,7 @@
     <!-- http://www.example.org/conditional-maintenance-task-ontology#resultsIn -->
 
     <owl:ObjectProperty rdf:about="http://www.example.org/conditional-maintenance-task-ontology#resultsIn">
-        <rdfs:subPropertyOf rdf:resource="http://standards.iso.org/iso/15926/part14/after"/>
+        <rdfs:subPropertyOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/before"/>
     </owl:ObjectProperty>
     
 
@@ -152,21 +157,21 @@
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/Activity -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/Activity -->
 
-    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Activity"/>
+    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/Event -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/Event -->
 
-    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/Event"/>
+    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Event"/>
     
 
 
-    <!-- http://standards.iso.org/iso/15926/part14/InformationObject -->
+    <!-- http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject -->
 
-    <owl:Class rdf:about="http://standards.iso.org/iso/15926/part14/InformationObject"/>
+    <owl:Class rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
     
 
 
@@ -192,14 +197,14 @@
     <!-- http://www.example.org/conditional-maintenance-task-ontology#FailureEvent -->
 
     <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FailureEvent">
-        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Event"/>
+        <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Event"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#resultsIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <skos:definition>An ISO:Activity that results in a OMPD: functional failure</skos:definition>
+        <rdfs:isDefinedBy>An ISO:Event that resuts in a OMPD: Functional Failure</rdfs:isDefinedBy>
     </owl:Class>
     
 
@@ -207,13 +212,17 @@
     <!-- http://www.example.org/conditional-maintenance-task-ontology#FailureModeObservation -->
 
     <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FailureModeObservation">
-        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/InformationObject"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/InformationObject"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/isAbout"/>
+                        <owl:someValuesFrom rdf:resource="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <skos:definition>An ISO:Information object that denotes a OMPD:functional failure</skos:definition>
     </owl:Class>
     
@@ -222,8 +231,8 @@
     <!-- http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure -->
 
     <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure">
-        <rdfs:subClassOf rdf:resource="http://standards.iso.org/iso/15926/part14/Activity"/>
-        <skos:definition>An ISO:Activity that is denoted by a OMPD:Failure mode observation</skos:definition>
+        <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+        <rdfs:comment>An ISO: Activity that is represented in a OMPD: Failure Mode Observation</rdfs:comment>
     </owl:Class>
     
 
