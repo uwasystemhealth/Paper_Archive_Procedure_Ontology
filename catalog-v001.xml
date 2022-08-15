@@ -4,7 +4,8 @@
     <uri id="Imports Wizard Entry" name="http://test.com/iso/15926/part14/1.0" uri="iso-15926.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.example.org/static-procedure-ontology/1.0.0" uri="static-procedure-ontology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1628060791477" name="http://standards.iso.org/iso/15926/part14/" uri="iso-15926.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1628060791477" name="http://www.example.org/conditional-maintenance-task-ontology" uri="conditional-maintenance-task-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660521446172" name="http://rds.posccaesar.org/ontology/lis14/ont/core" uri="iso.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660521446172" name="http://www.example.org/conditional-maintenance-task-ontology" uri="conditional-maintenance-task-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660521446172" name="http://www.semanticweb.org/21324675/ontologies/2021/1/untitled-ontology-14" uri="static-procedure-ontology.owl"/>
     </group>
 </catalog>

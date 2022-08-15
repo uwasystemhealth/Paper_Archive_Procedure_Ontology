@@ -284,9 +284,27 @@
     
 
 
+    <!-- http://www.example.org/static-procedure-ontology#documentIdentifier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/static-procedure-ontology#documentIdentifier">
+        <rdfs:label>documentIdentifier</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.example.org/static-procedure-ontology#hasTextValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.example.org/static-procedure-ontology#hasTextValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.example.org/static-procedure-ontology#hasTextValue">
+        <rdfs:label>hasTextValue</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.example.org/static-procedure-ontology#version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.example.org/static-procedure-ontology#version">
+        <rdfs:label>version</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -642,6 +660,27 @@
     <!-- http://www.example.org/static-procedure-ontology#ResourceRole -->
 
     <owl:Class rdf:about="http://www.example.org/static-procedure-ontology#ResourceRole">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/roleOf"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://rds.posccaesar.org/ontology/lis14/rdl/Object"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="http://www.example.org/static-procedure-ontology#requirementOf"/>
+                                        <owl:someValuesFrom rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Role"/>
         <rdfs:isDefinedBy>An ISO:Role that is the role of an ISO:Object that is required o execute some ISO:Activity</rdfs:isDefinedBy>
     </owl:Class>
