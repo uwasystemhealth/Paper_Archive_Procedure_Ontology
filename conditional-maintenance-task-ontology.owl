@@ -232,7 +232,13 @@
 
     <owl:Class rdf:about="http://www.example.org/conditional-maintenance-task-ontology#FunctionalFailure">
         <rdfs:subClassOf rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/Activity"/>
-        <rdfs:comment>An ISO: Activity that is represented in a OMPD: Failure Mode Observation</rdfs:comment>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://rds.posccaesar.org/ontology/lis14/rdl/hasParticipant"/>
+                <owl:someValuesFrom rdf:resource="http://www.example.org/static-procedure-ontology#MaintainableItem"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An ISO: Activity that is represented in a OMPD: Failure Mode Observation and hasParticipant some OMPD: Maintainable Item</rdfs:comment>
     </owl:Class>
     
 
